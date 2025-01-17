@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .result-box {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .result-box.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .result-box h1 {
+            font-size: 3.5em;
+            color: #4CAF50;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: color 0.5s ease-in-out;
+        }
+
+        .result-box h1.success {
+            color: #4CAF50; /* Green for success */
+        }
+
+        .result-box h1.error {
+            color: #FF6347; /* Red for error */
+        }
+
+        .result-box h1.warning {
+            color: #FFA500; /* Orange for caution */
+        }
+
+        .result-box p {
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 20px;
+            font-weight: 400;
+        }
+
+        .result-box .result-description {
+            font-size: 1.1em;
+            color: #777;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        .back-button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-box {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="result-box" id="result-box">
+            <h1 class="success" id="final-result">Income Prediction: ${{final_result}}</h1>
+            <p>The Income is predicted based on various attributes such as age, education, occupation, etc.</p>
+            <p class="result-description">Thank you for using our Income prediction model. Feel free to adjust the input values and try again for more accurate predictions.</p>
+            <button class="back-button" onclick="window.history.back()">Go Back</button>
+        </div>
+    </div>
+
+    <script>
+        // Simulate displaying the final result
+        window.onload = function() {
+            document.getElementById('result-box').classList.add('show');
+        }
+    </script>
+</body>
+</html>

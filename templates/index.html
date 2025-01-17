@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Census Income Prediction</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            font-size: 2em;
+            margin: 20px 0;
+            font-weight: 400;
+        }
+
+        header h3 {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        /* Main content */
+        .content {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .description {
+            text-align: left;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .description h3 {
+            font-size: 1.8em;
+            color: #4CAF50;
+        }
+
+        .description p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .input-attributes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .input-attributes .attribute {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .input-attributes .attribute:hover {
+            transform: scale(1.05);
+        }
+
+        .input-attributes h4 {
+            color: #4CAF50;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .input-attributes p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* New section styling */
+        .prediction-info {
+            text-align: center;
+            background-color: #fff;
+            padding: 50px;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .prediction-info h3 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .prediction-info p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .prediction-info a {
+            font-size: 1.1em;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .prediction-info a:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .input-attributes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .input-attributes .attribute {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Egglisten Samuel's</h1>
+        <h2>Census Income Prediction</h2>
+        <h3>Learn about the input attributes used in census income prediction</h3>
+    </header>
+
+    <!-- Prediction Information Section -->
+    <div class="prediction-info">
+        <h3>Predict your Income based on Census Data in Minutes!</h3>
+        <p>Our machine learning model trained to predict an individual's income category (<=50K or >50K) based on various features. The model uses a dataset from the UCI Census Income dataset to make the predictions. The project is built with Python, Scikit-learn, and Flask, with a front-end built using HTML and CSS.</p>
+        <a href="/predict">Go to Prediction Page</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <div class="description">
+            <h3>Understanding the Key Attributes for Prediction</h3>
+            <p>In this census income prediction model, several key attributes influence the final prediction of the income. Each attribute plays an important role in determining the quality, value, and overall pricing of the gemstone. Here's a brief explanation of each input:</p>
+            
+            <!-- List of attributes -->
+            <div class="input-attributes">
+
+                <!-- Age -->
+                <div class="attribute">
+                    <h4>Age</h4>
+                    <p>The Age of the Individual(numerical value).</p>
+                </div>
+
+                <!-- Workclass -->
+                <div class="attribute">
+                    <h4>Workclass</h4>
+                    <p>Type of employment the person is in (e.g., Private, Federal-gov, Self-employed, etc.).</p>
+                </div>
+
+                <!-- Education -->
+                <div class="attribute">
+                    <h4>Education</h4>
+                    <p>Highest level of education achieved (e.g., Bachelors, Masters, Doctorate, etc.).</p>
+                </div>
+
+                <!-- Occupation -->
+                <div class="attribute">
+                    <h4>Occupation</h4>
+                    <p>Type of job the person does (e.g., Tech-support, Craft-repair, Sales, etc.).</p>
+                </div>
+
+                <!-- Hours Worked Per Week -->
+                <div class="attribute">
+                    <h4>Hours Worked Per Week</h4>
+                    <p>The number of hours worked per week by the individual.</p>
+                </div>
+
+                <!-- Gender -->
+                <div class="attribute">
+                    <h4>Gender</h4>
+                    <p>Gender of the individual (Male or Female).</p>
+                </div>
+
+                <!-- Capital Gain -->
+                <div class="attribute">
+                    <h4>Capital Gain</h4>
+                    <p>The amount of capital gains earned by the individual (numerical value, often from investment).</p>
+                </div>
+
+                <!-- Capital Loss -->
+                <div class="attribute">
+                    <h4>Capital Loss</h4>
+                    <p>The amount of capital losses incurred by the individual (numerical value, often from investment).</p>
+                </div>
+
+                <!-- Capital Loss -->
+                <div class="attribute">
+                    <h4>Relationship</h4>
+                    <p>The relationship status of the individual (e.g., Husband, Wife, Not-in-family, etc.).</p>
+                </div>
+
+                <!-- Capital Loss -->
+                <div class="attribute">
+                    <h4>Race</h4>
+                    <p>The race of the individual (e.g., White, Black, Asian-Pac-Islander, etc.).</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Egglisten Samuel's ML Project. All rights reserved.</p>
+        <p>Powered by the Egglisten - Data Scientist</p>
+    </footer>
+
+</body>
+</html>

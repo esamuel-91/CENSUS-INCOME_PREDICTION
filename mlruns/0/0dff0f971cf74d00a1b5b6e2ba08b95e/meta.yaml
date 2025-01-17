@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/snehaes/Data%20Science/income_prediction/mlruns/0/0dff0f971cf74d00a1b5b6e2ba08b95e/artifacts
+end_time: 1736961570504
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0dff0f971cf74d00a1b5b6e2ba08b95e
+run_name: redolent-ray-749
+run_uuid: 0dff0f971cf74d00a1b5b6e2ba08b95e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736961570498
+status: 3
+tags: []
+user_id: snehaes

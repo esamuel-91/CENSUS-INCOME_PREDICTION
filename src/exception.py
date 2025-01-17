@@ -1,0 +1,29 @@
+import sys
+import mlflow
+
+def error_message_details(error,error_details:sys):
+    _,_,exc_tb = error_details.exc_info()
+    file_name = exc_tb.tb_frame.f_code.co_filename
+    error_message = "Error occured while executing the python script:{} in the line number:{} with the error message:{}".format(
+        file_name,exc_tb.tb_lineno,str(error)
+    )
+
+    return error_message
+
+class CustomException(Exception):
+    def __init__(self, error_message,error_detials:sys):
+        super().__init__(error_message)
+        self.error_message = error_message_details(error=error_message,error_details=error_detials)
+
+    def __str__(self):
+        return self.error_message
+    
+"""
+if __name__=="__main__":
+    try:
+        a = 1/0
+    except Exception as e:
+        with mlflow.start_run():
+            mlflow.log_param("Exception Message",str(e))
+        raise CustomException(e,sys)
+"""

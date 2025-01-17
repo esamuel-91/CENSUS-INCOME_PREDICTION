@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/snehaes/Data%20Science/income_prediction/mlruns/0/c11f27e5000446ebbda8cb7460b284a7/artifacts
+end_time: 1737096398345
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c11f27e5000446ebbda8cb7460b284a7
+run_name: respected-shoat-358
+run_uuid: c11f27e5000446ebbda8cb7460b284a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737096398338
+status: 3
+tags: []
+user_id: snehaes

@@ -1,0 +1,1 @@
+Error occured while executing the python script:/Users/snehaes/Data Science/income_prediction/src/pipeline/prediction_pipeline.py in the line number:20 with the error message:Found unknown categories [None] in column 2 during transform

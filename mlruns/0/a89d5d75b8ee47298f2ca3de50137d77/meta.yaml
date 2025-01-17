@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/snehaes/Data%20Science/income_prediction/mlruns/0/a89d5d75b8ee47298f2ca3de50137d77/artifacts
+end_time: 1737096234872
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a89d5d75b8ee47298f2ca3de50137d77
+run_name: youthful-goat-256
+run_uuid: a89d5d75b8ee47298f2ca3de50137d77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737096234863
+status: 3
+tags: []
+user_id: snehaes

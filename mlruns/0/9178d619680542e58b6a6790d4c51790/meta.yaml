@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/snehaes/Data%20Science/income_prediction/mlruns/0/9178d619680542e58b6a6790d4c51790/artifacts
+end_time: 1736961568421
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9178d619680542e58b6a6790d4c51790
+run_name: dashing-sloth-738
+run_uuid: 9178d619680542e58b6a6790d4c51790
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736961568416
+status: 3
+tags: []
+user_id: snehaes

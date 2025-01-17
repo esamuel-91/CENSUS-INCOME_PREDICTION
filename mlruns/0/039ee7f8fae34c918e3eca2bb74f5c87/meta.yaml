@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/snehaes/Data%20Science/income_prediction/mlruns/0/039ee7f8fae34c918e3eca2bb74f5c87/artifacts
+end_time: 1736961568280
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 039ee7f8fae34c918e3eca2bb74f5c87
+run_name: classy-flea-12
+run_uuid: 039ee7f8fae34c918e3eca2bb74f5c87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736961568269
+status: 3
+tags: []
+user_id: snehaes
