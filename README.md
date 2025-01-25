@@ -115,7 +115,7 @@ Input form (form.html):
 * Education: Bachelors
 * Marital Status: Married
 * Occupation: Exec-managerial
-* ours per week: 40
+* Hours per week: 40
 * Sex: Male
 * Relationship: Husband
 * Race: White
